@@ -33,7 +33,10 @@ body, html {
     justify-content: center;
 }
     #img-div img {
+	border-radius: 8px;
         max-width: 300px;
+	margin-top: -10px;
+	margin-bottom: 15px;
     }
 
 #tribute-info {
