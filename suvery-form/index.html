@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Formulário de pesquisa</title>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 id="title" class="text-center">ProEIDI formulário de pesquisa</h1>
+      <p id="description" class="description text-center">
+        Obrigado por ajudar á nós tornamos melhores 
+      </p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label for="name" id="name-label">Nome Completo</label>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Name" required>
+      </div>
+      <div class="form-group">
+        <label for="email" id="email-label">E-mail</label>
+        <input type="email" name="email" id="email" class="form-control" placeholder="E-mail" required>
+      </div>
+      <div class="form-group">
+        <label for="number" id="number-label">Idade</label>
+        <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age">
+      </div>
+      <div class="form-group">
+        <p>Quem lhe endicou o curso?</p>
+        <select name="role" id="dropdown" class="form-control" required>
+          <option disabled selected value>Selecione uma das opções</option>
+          <option value="friend">Amigo(a)</option>
+          <option value="familiar">Familiar</option>
+          <option value="nobody">Ninguém</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>Você indicaria o curso á um amigo?</p>
+        <label >
+          <input name="user-recommend" value="yes" type="radio" class="input-radio">Sim
+        </label>
+        <label>
+          <input name="user-recommend" value="maybe" type="radio" class="input-radio">Talvez
+        </label>
+        <label>
+          <input name="user-recommend" value="no" type="radio" class="input-radio">Não
+        </label>
+      </div>
+      <div class="form-group">
+        <p>
+          O que você mais gostou de aprender no curso?
+        </p>
+        <select name="mostLike" id="most-like" class="form-control" required>
+          <option disabled selected value>Selecione uma das opção</option>
+          <option value="Facebook">Facebook</option>
+          <option value="Instagram">Instagram</option>
+          <option value="Programing">Programação</option>
+          <option value="Desktop">Área de trabalho</option>
+          <option value="Smartphone">Smartphone</option>
+          <option value="Computer">Computador</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>
+          O que devia ser melhorado?
+        </p>
+        <label>
+          <input name="prefer" value="teachers" type="checkbox" class="input-checkbox">Professores
+        </label>
+        <label>
+          <input name="prefer" value="monitors" type="checkbox" class="input-checkbox">Monitores
+        </label>
+        <label>
+          <input name="prefer" value="computers" type="checkbox" class="input-checkbox">Computadores
+        </label>
+        <label>
+          <input name="prefer" value="rooms" type="checkbox" class="input-checkbox">Salas
+        </label>
+        <label>
+          <input name="prefer" value="acessibility" type="checkbox" class="input-checkbox">Acessibilidade
+        </label>
+      </div>
+      <div class="form-group">
+        <p>Alguma comentário ou sugestão?</p>
+        <textarea name="comment" id="comments" class="input-textarea" placeholder="Entre com seu comentário aqui...."></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">Enviar</button>
+      </div>
+      <div class="form-group">
+        <p>Para mais informações clique <a href="https://inclusaodigital.imd.ufrn.br/" target="_blank">aqui</a></p>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
