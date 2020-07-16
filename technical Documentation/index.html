@@ -1,0 +1,253 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=main#, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- My Technical Documentation page should use at least one media query. -->
+    
+
+    <!--  I can see a nav element with a corresponding id="navbar". -->
+    <!-- On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user. -->
+    <nav id="navbar">
+
+        <!-- I can see a nav element with a corresponding id="navbar". -->
+        <!-- The header element in the navbar must come before any link (a) elements in the navbar. -->
+        <header>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/120px-ISO_C%2B%2B_Logo.svg.png"
+            alt="C++ logo">
+            <h3>Introduction to iostream: cout, cin, and endl on C++</h3>
+        </header>
+        <!-- Additionally, the navbar should contain link (a) elements with the class of nav-link. There should be one for every element with the class main-section. -->
+        <!-- Each element with the class of nav-link should contain text that corresponds to the header text within each section -->
+        <!-- When I click on a navbar element, the page should navigate to the corresponding section of the main-doc element  -->
+        <ul>
+            <a class="nav-link" href="#The_input/output_library">The input/output library</a>
+            <a class="nav-link" href="#std::cout">std::cout</a>
+            <a class="nav-link" href="#std::endl">std::endl</a>
+            <a class="nav-link" href="#std::endl_vs_‘\n’">std::endl vs ‘\n’</a>
+            <a class="nav-link" href="#std::cin">std::cin</a>
+            <a class="nav-link" href="#Summary">Summary</a>
+
+         </ul>
+
+     </nav>
+    <main id="main-doc">
+
+        <!-- The input/output library -->
+        <section id="The_input/output_library"  class="main-section">
+            <header ><h4>The input/output library</h4></header>
+            <!-- The .main-section elements should contain at least 10 p elements total (not each). -->
+            <p>
+                The input/output library (io library) is part of the C++ standard library that deals with basic input and output. We’ll use the functionality in this library to get input from the keyboard and output data to the console. The io part of iostream stands for input/output.
+            </p>
+
+            <p>
+                To use the functionality defined within the iostream library, we need to include the iostream header at the top of any code file that uses the content defined in iostream, like so:
+            </p>
+            <!-- The .main-section elements should contain at least 5 code elements total (not each). -->
+            <code>
+                #include &lt;iostream&gt;<br>
+ 
+                // rest of code that uses iostream functionality here
+
+            </code>
+            <!-- The .main-section elements should contain at least 5 li items total (not each). -->
+        </section>
+        <!-- std::cout -->
+        <section id="std::cout" class="main-section">
+            <header ><h4>std::cout</h4></header>
+            <!-- The .main-section elements should contain at least 10 p elements total (not each). -->
+            <p>The iostream library contains a few predefined variables for us to use. One of the most useful is std::cout, which allows us to send data to the console to be printed as text. cout stands for “character output”.</p>
+            
+            <p>As a reminder, here’s our Hello world program:</p>
+            <!-- The .main-section elements should contain at least 5 code elements total (not each). -->
+
+            <code>
+                #include &lt;iostream&gt; // for std::cout<br>
+ 
+                    int main()<br>
+                    {<br>
+                        std::cout << "Hello world!"; // print Hello world! to console<br>
+                     
+                        return 0;<br>
+                    }
+            </code>
+
+            <p>In this program, we have included iostream so that we have access to std::cout. Inside our main function, we use std::cout, along with the insertion operator (<<), to send the text Hello world! to the console to be printed</p>
+
+            <p>std::cout can not only print text, it can also print numbers:</p>
+
+            <code>
+                #include &lt;iostream&gt; // for std::cout<br>
+ 
+                    int main()<br>
+                    {<br>
+                        std::cout << 4; // print 4 to console<br>
+                     
+                        return 0;<br>
+                    }<br>
+            </code>
+            <p>This produces the result:</p>
+            <p>4</p>
+
+            <p>It can also be used to print the value of variables:</p>
+            <code>
+                #include &lt;iostream&gt; // for std::cout<br>
+ 
+                int main()<br>
+                {<br>
+                    int x{ 5 }; // define integer variable x, initialized with value 5<br>
+                    std::cout << x; // print value of x (5) to console<br>
+                    return 0;<br>
+                }
+            </code>
+                <p>This produces the result:</p>
+                <p>5</p>
+               
+                <p>To print more than one thing on the same line, the insertion operator (<<) can be used multiple times in a single statement to concatenate (link together) multiple pieces of output. For example:</p>
+        
+                <code>
+                    #include &lt;iostream&gt; // for std::cout<br>
+ 
+                        int main()<br>
+                        {<br>
+                            std::cout << "Hello" << " world!";<br>
+                            return 0;<br>
+                        }
+                </code>
+                <p>This program prints:</p>
+                <p>Hello world!</p>
+
+                <p>Here’s another example where we print both text and the value of a variable in the same statement:</p>
+                <code>#include &lt;iostream&gt; // for std::cout<br>
+ 
+                    int main()<br>
+                    {<br>
+                        int x{ 5 };<br>
+                        std::cout << "x is equal to: " << x;<br>
+                        return 0;<br>
+                    }</code>
+                <p>This program prints:</p>
+                <p>x is equal to: 5</p>
+            </section>
+        <!-- std::endl -->
+        <section  id="std::endl" class="main-section">
+            <header ><h4>std::endl</h4></header>
+            <!-- The .main-section elements should contain at least 10 p elements total (not each). -->
+            <h4>Variable assignment</h4>
+            <p>
+                What would you expect this program to print?
+            </p>
+            <code>
+                #include &lt;iostream&gt; // for std::cout<br>
+ 
+                    int main()<br>
+                    {<br>
+                        std::cout << "Hi!";<br>
+                        std::cout << "My name is Alex.";<br>
+                        return 0;<br>
+                    }
+            </code>
+
+            <p>You might be surprised at the result:</p>
+            <p>Hi!My name is Alex.</p>
+
+        </section>
+        <!-- std::endl vs ‘\n’ -->
+        <section id="std::endl_vs_‘\n’" class="main-section">
+            <header ><h4>std::endl vs ‘\n’</h4></header>
+            <!-- The .main-section elements should contain at least 10 p elements total (not each). -->
+            <p>
+                Using std::endl can be a bit inefficient, as it actually does two jobs: it moves the cursor to the next line, and it “flushes” the output (makes sure that it shows up on the screen immediately). When writing text to the console using std::cout, std::cout usually flushes output anyway (and if it doesn’t, it usually doesn’t matter), so having std::endl flush is rarely important.            </p>
+
+            <p>
+                Because of this, use of the ‘\n’ character is typically preferred instead. The ‘\n’ character moves the cursor to the next line, but doesn’t do the redundant flush, so it performs better. The ‘\n’ character also tends to be easier to read since it’s both shorter and can be embedded into existing text.            </p>
+            <p>
+                Here’s an example that uses ‘\n’ in two different ways:
+            </p>
+                
+        <!-- The .main-section elements should contain at least 5 code elements total (not each). -->
+            <code>
+                #include &lt;iostream&gt; // for std::cout<br>
+ 
+                    int main()<br>
+                    {<br>
+                        int x{ 5 };<br>
+                        std::cout << "x is equal to: " << x << '\n'; // Using '\n' standalone<br>
+                        std::cout << "And that's all, folks!\n"; // Using '\n' embedded into a double-quoted piece of text (note: no single quotes when used this way)<br>
+                        return 0;<br>
+                    }
+            </code>
+
+            <p>
+                This prints:
+            </p>
+            <p>
+                x is equal to: 5
+                And that's all, folks!
+            </p>
+
+            <p>
+                Note that when ‘\n’ is used by itself to move the cursor to the next line, the single quotes are needed. When embedded into text that is already double-quoted, the single quotes aren’t needed.
+            </p>
+        </section>
+        <!-- std::cin -->
+        <section id="std::cin" class="main-section">
+            <header ><h4>std::cin</h4></header>
+            <!-- The .main-section elements should contain at least 10 p elements total (not each). -->
+            <p>
+                std::cin is another predefined variable that is defined in the iostream library. Whereas std::cout prints data to the console using the insertion operator (<<), std::cin (which stands for “character input”) reads input from keyboard using the extraction operator (>>). The input must be stored in a variable to be used.
+            </p>
+            <!-- The .main-section elements should contain at least 5 code elements total (not each). -->
+            <code>
+                #include &lt;iostream&gt;  // for std::cout and std::cin<br>
+ 
+                    int main()<br>
+                    {<br>
+                        std::cout << "Enter a number: "; // ask user for a number<br>
+                        int x{ }; // define variable x to hold user input (and zero-initialize it)<br>
+                        std::cin >> x; // get number from keyboard and store it in variable x<br>
+                        std::cout << "You entered " << x << '\n';<br>
+                        return 0;<br>
+                    }
+            </code>
+            <p>
+                Try compiling this program and running it for yourself. When you run the program, line 5 will print “Enter a number: “. When the code gets to line 7, your program will wait for you to enter input. Once you enter a number (and press enter), the number you enter will be assigned to variable x. Finally, on line 8, the program will print “You entered ” followed by the number you just entered.
+            </p>
+            <p>
+                For example (I entered 4):
+            </p>
+            <p>
+                Enter a number: 4
+                You entered 4
+            </p>
+            <p>
+                This is an easy way to get keyboard input from the user, and we will use it in many of our examples going forward. Note that you don’t need to use ‘\n’ when accepting input, as the user will need to press the enter key to have their input accepted, and this will move the cursor to the next line.
+            </p>
+
+        </section>
+        <!-- Sumary -->
+        <section id="Summary" class="main-section">
+            <header ><h4>Summary</h4></header>
+            <!-- The .main-section elements should contain at least 10 p elements total (not each). -->
+            <p>
+                New programmers often mix up std::cin, std::cout, the insertion operator (<<) and the extraction operator (>>). Here’s an easy way to remember:
+            </p>
+            <ul>
+                <li>std::cin and std::cout always go on the left-hand side of the statement.</li>
+                <li>std::cout is used to output a value (cout = character output)</li>
+                <li>std::cin is used to get an input value (cin = character input)</li>
+                <li><< is used with std::cout, and shows the direction that data is moving (if std::cout represents the console, the output data is moving from the variable to the console). std::cout << 4 moves the value of 4 to the console</li>
+                <li>>> is used with std::cin, and shows the direction that data is moving (if std::cin represents the keyboard, the input data is moving from the keyboard to the variable). std::cin >> x moves the value the user entered from the keyboard into x</li>
+            </ul>
+        </section>
+
+    </main>
+
+</body>
+</html>
