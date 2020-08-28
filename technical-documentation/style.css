@@ -50,8 +50,6 @@ navbar {
     }
 
 main {
-    position: relative;
-    left: 378px;
 
     padding: 26px;
     max-width: 1008px;
@@ -70,11 +68,6 @@ section {
         padding: 18px;
     }
     
-
-
-
-
-
 
 
 

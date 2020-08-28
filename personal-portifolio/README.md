@@ -6,7 +6,7 @@
   <!-- <a href="https://responsivewebdesign.netlify.app">Demo</a> -->
 </div>
 
-<h1 align="center">Technical Documentation</h1>
+<h1 align="center">Personal Portifolio</h1>
 
 
 
@@ -25,13 +25,18 @@ Describe your project
 
 ## :sparkles: Features ##
 
-:heavy_check_mark: About C++;\
+:heavy_check_mark: Grid Projects;\
+:heavy_check_mark: Home;\
+:heavy_check_mark: Nave bar;\
+:heavy_check_mark: Hiper link to social network;
+
+
 
 ## :sparkles: Project Image ##
 
-<img src="./assets/Screenshot_2020-08-28 Document.png">
+<img src="./assets/Screenshot_2020-08-28 Document(1).png">
 
-Made with :heart: by <a href="https://github.com/fernando-ff" target="_blank">Fernando Ferreira</a>
+Made with :heart: by <a href="https://github.com/fernando_ff" target="_blank">Fernando Ferreira</a>
 
 &#xa0;
 

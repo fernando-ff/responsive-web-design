@@ -3,13 +3,11 @@
 
   &#xa0;
 
-  <!-- <a href="https://responsivewebdesign.netlify.app">Demo</a> -->
 </div>
 
-<h1 align="center">Technical Documentation</h1>
+<h1 align="center">Suvery Form</h1>
 
-
-
+>
 
 <p align="center">
   <a href="#dart-about">About</a> &#xa0; | &#xa0; 
@@ -25,11 +23,13 @@ Describe your project
 
 ## :sparkles: Features ##
 
-:heavy_check_mark: About C++;\
+:heavy_check_mark: Take user Information;\
+:heavy_check_mark: Submit Form;
 
 ## :sparkles: Project Image ##
 
-<img src="./assets/Screenshot_2020-08-28 Document.png">
+<img src="./assets/Screenshot_2020-08-28 Formulário de pesquisa(1).png">
+
 
 Made with :heart: by <a href="https://github.com/fernando-ff" target="_blank">Fernando Ferreira</a>
 

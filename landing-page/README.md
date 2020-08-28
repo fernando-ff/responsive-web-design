@@ -3,11 +3,11 @@
 
   &#xa0;
 
-  <!-- <a href="https://responsivewebdesign.netlify.app">Demo</a> -->
 </div>
 
-<h1 align="center">Technical Documentation</h1>
+<h1 align="center">Landing Page</h1>
 
+>
 
 
 
@@ -21,16 +21,18 @@
 
 ## :dart: About ##
 
-Describe your project
-
 ## :sparkles: Features ##
 
-:heavy_check_mark: About C++;\
+:heavy_check_mark: Table Prices;\
+:heavy_check_mark: Iframe;\
+:heavy_check_mark: Email Register;\
+:heavy_check_mark: Navigation bar;
 
-## :sparkles: Project Image ##
 
-<img src="./assets/Screenshot_2020-08-28 Document.png">
 
+## :sparkles: Project Images ##
+
+<img src="./assets/Screenshot_2020-08-28 FreecodeCamp Landing Page.png">
 Made with :heart: by <a href="https://github.com/fernando-ff" target="_blank">Fernando Ferreira</a>
 
 &#xa0;
