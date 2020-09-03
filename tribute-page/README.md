@@ -35,12 +35,17 @@ Tribute page for Baruch Spinoza
 :heavy_check_mark: Main books;\
 :heavy_check_mark: Biografis references;
 
-## :sparkles: Project Image ##
-<div style="align-item:center; justify:content-center">
+## :sparkles: Project Images ##
+## Mobile Version ##
+<div align="center">
   <img src="./assets/Screenshot_2020-09-03 Página tributo.png">
 </div>
-Made with :heart: by <a href="https://github.com/fernando-ff" target="_blank">Fernando Ferreira</a>
+
+## :computer: Desktop Version ##
+<img src="./assets/Screenshot_2020-09-03 Página tributo(1).png">
 
 &#xa0;
+Made with :heart: by <a href="https://github.com/fernando-ff" target="_blank">Fernando Ferreira</a>
+
 
 <a href="#top">Back to top</a>
