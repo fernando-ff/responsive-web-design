@@ -1,67 +1,87 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-body, html {
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+    max-width: 100%;
+    background-color:rgba(255, 255, 255, 1);
+}
+.intro-section {
     width: 100%;
     height: 100%;
-    font: 400 18px "Roboto", sans-serif;
-    background: DarkGray;
-    overflow: hidden;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#main{
-    display: flex;
-    flex-direction: row;
-    background: Silver;
-    width: 1000px;
-
-    box-shadow: 0 0 8px rgb(0, 0, 0.02);
-    border-radius: 8px;
-    transition: all 0.5s ease;
-
-}
-
-#img-div {
-    padding: 24px 48px;
-    font: 500 18px "Roboto", sans-serif;
-    background: Silver;
-    border-radius: 8px;
+    max-width: 328px;
+    max-height: 596px;
+    background-color: rgba(128, 128 , 128, 0.8);
+    margin: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 1.6px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.4);
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
-    #img-div img {
-	border-radius: 8px;
-        max-width: 300px;
-	margin-top: -10px;
-	margin-bottom: 15px;
+    .intro-section h1 {
+        font-weight: bold;
+        font-size: 24px;
+        margin: 8px;
     }
-
-#tribute-info {
-    border-radius: 8px;
-    padding: 24px 5px;
-    line-height: 2rem;
-    background: Silver;
+    .intro-section img {
+        max-width: 208px;
+        height: 248px;
+        width: 100%;
+        border-radius: 1px;
+    }
+    .intro-section .intro-topics{
+        margin: 16px 42px;
+    }
+    .intro-section .intro-topics li {
+        margin-bottom: 8px;
+    }
+    .intro-section .intro-topics li strong {
+        font-weight: bold;
+        margin-right: 10px;
+    }
+.life {
+    background-color: rgba(128, 128 , 128, 0.8);
+    max-width: 100%;
+    margin: 12px 0px;
+    padding: 18px 18px;
+    text-align: justify;
+    border: 1px solid rgba(0, 0, 0, 0.2);
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
+    .life h2 {
+        font-weight: bold;
+        font-size: 18px;
+        margin: 0 0 012px;
+    }
+    .life p {
+        margin: 6px 24px;
+    }
 
-    li:hover {
-       transform: scale(1.1);
-    }
-@media(max-width:1024px){
-    body, html {
-        overflow: visible;
-    }
-    #main {
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-    }
+.books {
+    background-color: rgba(128, 128 , 128, 0.8);
+    width: 100%;
+    padding: 18px 0px;
+    margin: 0 0 28px 0;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+    .books h2 {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .books-list {
+        margin: 12px 0px;
+    }
+    .books-list li {
+        margin-bottom: 8px;
+    }
