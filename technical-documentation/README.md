@@ -27,9 +27,16 @@ Describe your project
 
 :heavy_check_mark: About C++;\
 
-## :sparkles: Project Image ##
+## :computer: Desktop Version ##
 
-<img src="./assets/Screenshot_2020-08-28 Document.png">
+<img src="./assets/Screenshot_2020-09-03 Document.png">
+
+
+## :iphone: Mobile Version ##
+
+<div align="center">
+<img  src="./assets/Screenshot_2020-09-03 Document(1).png">
+</div>
 
 Made with :heart: by <a href="https://github.com/fernando-ff" target="_blank">Fernando Ferreira</a>
 
