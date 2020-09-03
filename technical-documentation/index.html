@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
     <meta name="viewport" content="width=main#, initial-scale=1.0">
     <title>Document</title>
 </head>
@@ -13,33 +14,29 @@
 
     <!--  I can see a nav element with a corresponding id="navbar". -->
     <!-- On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user. -->
-    <nav id="navbar">
 
-        <!-- I can see a nav element with a corresponding id="navbar". -->
-        <!-- The header element in the navbar must come before any link (a) elements in the navbar. -->
-        <header>
+    <main id="main-doc">
+        <section id="img-container" class="img-container main-section">
             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/120px-ISO_C%2B%2B_Logo.svg.png"
             alt="C++ logo">
             <h3>Introduction to iostream: cout, cin, and endl on C++</h3>
-        </header>
-        <!-- Additionally, the navbar should contain link (a) elements with the class of nav-link. There should be one for every element with the class main-section. -->
-        <!-- Each element with the class of nav-link should contain text that corresponds to the header text within each section -->
-        <!-- When I click on a navbar element, the page should navigate to the corresponding section of the main-doc element  -->
-        <ul>
-            <a class="nav-link" href="#The_input/output_library">The input/output library</a>
-            <a class="nav-link" href="#std::cout">std::cout</a>
-            <a class="nav-link" href="#std::endl">std::endl</a>
-            <a class="nav-link" href="#std::endl_vs_‘\n’">std::endl vs ‘\n’</a>
-            <a class="nav-link" href="#std::cin">std::cin</a>
-            <a class="nav-link" href="#Summary">Summary</a>
-
-         </ul>
-
-     </nav>
-    <main id="main-doc">
-
+        </section>
+        <section id="Summary" class="main-section sumary-container">
+            <header ><h4>Summary</h4></header>
+            <!-- The .main-section elements should contain at least 10 p elements total (not each). -->
+            <p>
+                New programmers often mix up std::cin, std::cout, the insertion operator (<<) and the extraction operator (>>). Here’s an easy way to remember:
+            </p>
+            <ul>
+                <li>std::cin and std::cout always go on the left-hand side of the statement.</li>
+                <li>std::cout is used to output a value (cout = character output)</li>
+                <li>std::cin is used to get an input value (cin = character input)</li>
+                <li><< is used with std::cout, and shows the direction that data is moving (if std::cout represents the console, the output data is moving from the variable to the console). std::cout << 4 moves the value of 4 to the console</li>
+                <li>>> is used with std::cin, and shows the direction that data is moving (if std::cin represents the keyboard, the input data is moving from the keyboard to the variable). std::cin >> x moves the value the user entered from the keyboard into x</li>
+            </ul>
+        </section>
         <!-- The input/output library -->
-        <section id="The_input/output_library"  class="main-section">
+        <section id="The_input/output_library"  class="main-section io-container">
             <header ><h4>The input/output library</h4></header>
             <!-- The .main-section elements should contain at least 10 p elements total (not each). -->
             <p>
@@ -59,7 +56,32 @@
             <!-- The .main-section elements should contain at least 5 li items total (not each). -->
         </section>
         <!-- std::cout -->
-        <section id="std::cout" class="main-section">
+
+        <!-- std::endl -->
+        <section  id="std::endl" class="main-section endl-container">
+            <header ><h4>std::endl</h4></header>
+            <!-- The .main-section elements should contain at least 10 p elements total (not each). -->
+            <h4>Variable assignment</h4>
+            <p>
+                What would you expect this program to print?
+            </p>
+            <code>
+                #include &lt;iostream&gt; // for std::cout<br>
+ 
+                    int main()<br>
+                    {<br>
+                        std::cout << "Hi!";<br>
+                        std::cout << "My name is Alex.";<br>
+                        return 0;<br>
+                    }
+            </code>
+
+            <p>You might be surprised at the result:</p>
+            <p>Hi!My name is Alex.</p>
+
+        </section>
+
+        <section id="std-cout" class="main-section cout-container">
             <header ><h4>std::cout</h4></header>
             <!-- The .main-section elements should contain at least 10 p elements total (not each). -->
             <p>The iostream library contains a few predefined variables for us to use. One of the most useful is std::cout, which allows us to send data to the console to be printed as text. cout stands for “character output”.</p>
@@ -106,60 +128,10 @@
                     return 0;<br>
                 }
             </code>
-                <p>This produces the result:</p>
-                <p>5</p>
-               
-                <p>To print more than one thing on the same line, the insertion operator (<<) can be used multiple times in a single statement to concatenate (link together) multiple pieces of output. For example:</p>
-        
-                <code>
-                    #include &lt;iostream&gt; // for std::cout<br>
- 
-                        int main()<br>
-                        {<br>
-                            std::cout << "Hello" << " world!";<br>
-                            return 0;<br>
-                        }
-                </code>
-                <p>This program prints:</p>
-                <p>Hello world!</p>
 
-                <p>Here’s another example where we print both text and the value of a variable in the same statement:</p>
-                <code>#include &lt;iostream&gt; // for std::cout<br>
- 
-                    int main()<br>
-                    {<br>
-                        int x{ 5 };<br>
-                        std::cout << "x is equal to: " << x;<br>
-                        return 0;<br>
-                    }</code>
-                <p>This program prints:</p>
-                <p>x is equal to: 5</p>
             </section>
-        <!-- std::endl -->
-        <section  id="std::endl" class="main-section">
-            <header ><h4>std::endl</h4></header>
-            <!-- The .main-section elements should contain at least 10 p elements total (not each). -->
-            <h4>Variable assignment</h4>
-            <p>
-                What would you expect this program to print?
-            </p>
-            <code>
-                #include &lt;iostream&gt; // for std::cout<br>
- 
-                    int main()<br>
-                    {<br>
-                        std::cout << "Hi!";<br>
-                        std::cout << "My name is Alex.";<br>
-                        return 0;<br>
-                    }
-            </code>
-
-            <p>You might be surprised at the result:</p>
-            <p>Hi!My name is Alex.</p>
-
-        </section>
         <!-- std::endl vs ‘\n’ -->
-        <section id="std::endl_vs_‘\n’" class="main-section">
+        <section id="std::endl_vs_‘\n’" class="main-section endl-container">
             <header ><h4>std::endl vs ‘\n’</h4></header>
             <!-- The .main-section elements should contain at least 10 p elements total (not each). -->
             <p>
@@ -197,7 +169,7 @@
             </p>
         </section>
         <!-- std::cin -->
-        <section id="std::cin" class="main-section">
+        <section id="std::cin" class="main-section cin-container">
             <header ><h4>std::cin</h4></header>
             <!-- The .main-section elements should contain at least 10 p elements total (not each). -->
             <p>
@@ -232,20 +204,7 @@
 
         </section>
         <!-- Sumary -->
-        <section id="Summary" class="main-section">
-            <header ><h4>Summary</h4></header>
-            <!-- The .main-section elements should contain at least 10 p elements total (not each). -->
-            <p>
-                New programmers often mix up std::cin, std::cout, the insertion operator (<<) and the extraction operator (>>). Here’s an easy way to remember:
-            </p>
-            <ul>
-                <li>std::cin and std::cout always go on the left-hand side of the statement.</li>
-                <li>std::cout is used to output a value (cout = character output)</li>
-                <li>std::cin is used to get an input value (cin = character input)</li>
-                <li><< is used with std::cout, and shows the direction that data is moving (if std::cout represents the console, the output data is moving from the variable to the console). std::cout << 4 moves the value of 4 to the console</li>
-                <li>>> is used with std::cin, and shows the direction that data is moving (if std::cin represents the keyboard, the input data is moving from the keyboard to the variable). std::cin >> x moves the value the user entered from the keyboard into x</li>
-            </ul>
-        </section>
+
 
     </main>
 
