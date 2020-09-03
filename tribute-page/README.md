@@ -20,7 +20,7 @@
 <p align="center">
   <a href="#dart-about">About</a> &#xa0; | &#xa0; 
   <a href="#sparkles-features">Features</a> &#xa0; | &#xa0;
-  <a href="https://github.com/{{YOUR_GITHUB_USERNAME}}" target="_blank">Author</a>
+  <a href="https://github.com/fernando-ffs" target="_blank">Author</a>
 </p>
 
 <br>
@@ -37,7 +37,7 @@ Tribute page for Baruch Spinoza
 
 ## :sparkles: Project Image ##
 
-<img src="./assets/Screenshot_2020-08-28 Página tributo.png">
+<img src="./assets/Screenshot_2020-09-03 Página tributo.png">
 
 Made with :heart: by <a href="https://github.com/fernando-ff" target="_blank">Fernando Ferreira</a>
 
