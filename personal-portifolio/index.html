@@ -1,71 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Personal Portifolio</title>
 </head>
 <body>
-    <nav id="navbar" class="navbar">
-        <ul>
-            <i class="fab fa-affiliatetheme"></i>
-            <a href="#welcome-section">Home</a>
-            <a href="#projects">Projects</a>
-        </ul>
-        <ul>
-            <a id="profile-link"  href="https://github.com/fernando-ff" target="_blank">
-                <i class="fab fa-github"></i>
-            </a>
-            <i id="profile-link" class="fab fa-linkedin-in"></i>    
-            <i id="profile-link" class="fab fa-facebook-f"></i>   
+    <nav class="navbar">
+        <ul class="nav-items">
+            <li class="nav-item">
+                <a href="#">
+                    home
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#">
+                    education
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#">
+                    experience
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#">
+                    projects
+                </a>
+            </li>
         </ul>
     </nav>
-    <main class="main-section">
-        <section id="welcome-section" class="home">
-            <h1>Web developer</h1>
-        </section>
-    
-        <section id="projects" class="projects">
-            <h2>Projects</h2>
-            <hr>
-            <div class="projects-container">
-                <a href="https://codepen.io/fernando-ff/pen/BaoboGE" target="_blank">
-                    <div class="project">
-                        <img src="https://assets.codepen.io/4279568/internal/screenshots/pens/NWGopBp.default.png?format=auto&ha=true&height=720&quality=75&v=1&version=1590074756&width=320"
-                             class="img-project"
-                             alt="Landing Page">
-                        <div class="id-project">
-                            <p class="project-tile">Landing page for FreeCodeCamp courses</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="https://codepen.io/fernando-ff/pen/mdVGWNb" target="_blank">
-                    <div class="project">
-                        <img src="https://assets.codepen.io/4279568/internal/screenshots/pens/RwrYpzX.default.png?format=auto&amp;ha=false&amp;height=180&amp;quality=75&amp;v=1&amp;version=1594812693&amp;width=320"
-                             class="img-project"
-                             alt="Documentation page">
-                        <div class="id-project">
-                            <p class="project-tile">Introduction a std::cin, std::endl, etc on C++</p>
-                        </div>
-                        
-                    </div>
-                </a>
-                <a href="https://codepen.io/fernando-ff/pen/abvQKWN" target="_blank">
-                    <div class="project">
-                        <img 
-                            src="https://assets.codepen.io/4279568/internal/screenshots/pens/abvQKWN.default.png?format=auto&ha=false&height=180&quality=75&v=1&version=1589838384&width=320"
-                            class="img-project"
-                            alt="Tribute page"
-                        >
-                        <div class="id-project">
-                            <p class="project-tile">Tribute page for Baruch Spinoza</p>
-                        </div>
-                        
-                    </div>
-                </a>
+    </section>
+    <main>
+        <section class="home container">
+            <div class="img">
+                <img src="./assets/my-photo.jpg" alt="">
+                <div class="intro">
+                    <h4>Hi, there! nice see you here</h4>
+                    <h2>I'm Fernando Ferreira</h2>
+                    <h3>A web developer</h3>
+
+                </div>
+            </div>
+            <div class="about">
+                <h2>About me</h2>
+                <p>
+                    I started in IT with 17 years old throught the course" python para zumbis" by my old sister influence.
+                    After finishing the course I started to have more curiosity about the area, so with that in mind I decided 
+                    to go to college and currently I am doing "BTI" course (Information Tecnology Bacherlor) at UFRN.
+                </p>
+                <p>
+                    During this walking I'm having the oportunity to contribute in amazing projects, like ProEIDI and AEDES, 
+                    where I can learn and also put in practice my skills.
+                </p>
             </div>
         </section>
+        <section class="education container">
+            <div>
+                <h2>Education</h2>
+                <ul class="education-items">
+                    <li>
+                        <img src="./assets/logotipo_gradiente.png" alt="UFRN">
+                    </li>
+                    <li>
+                        <img src="./assets/imd.svg" alt="IMD">
+                    </li>
+                    <li>
+                        <img  src="./assets/FreeCodeCamp_logo.png" alt="FreeCodeCamp">
+                    </li>
+                    <li>
+                        <img src="./assets/alura.png" alt="Alura">
+                    </li>
+    
+                </ul>
+            </div>
+        </section>
+        <section class="experience container">
+            <div>
+                <h2>Experience</h2>
+                <ul class="experience-items">
+                    <li>
+                        <div class="project-container">
+                            <img src="./assets/LOGO AEDES 2.jpg" alt="AEDES">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="project-container">
+                            <img src="./assets/covid (1) (4).png" alt="CovidDiag">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="project-container">
+                            <img src="./assets/logo PROEIDI (2).png" alt="ProEIDI">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="projects container">
+            <div>
+                <h2>Personal Projects</h2>
+            </div>
+        </section>
+        <footer>
+
+        </footer>
     </main>
 </body>
 </html>
